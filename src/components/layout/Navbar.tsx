@@ -57,6 +57,13 @@ const Navbar = () => {
                 Home
               </Link>
 
+              <Link
+                to="/about"
+                className="px-3 py-2 text-foreground hover:text-seflam-blue dark:hover:text-seflam-orange hover-effect"
+              >
+                About Us
+              </Link>
+
               <DropdownMenu>
                 <DropdownMenuTrigger asChild>
                   <Button
@@ -218,6 +225,14 @@ const Navbar = () => {
                   onClick={toggleMenu}
                 >
                   Home
+                </Link>
+
+                <Link
+                  to="/about"
+                  className="py-2 text-foreground text-white hover:text-seflam-blue dark:hover:text-seflam-orange"
+                  onClick={toggleMenu}
+                >
+                  About Us
                 </Link>
 
                 <div className="py-2">

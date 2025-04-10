@@ -1,4 +1,3 @@
-
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -8,6 +7,7 @@ import { ThemeProvider } from "./components/ThemeProvider";
 import BackToTop from "./components/common/BackToTop";
 import Index from "./pages/Index";
 import Services from "./pages/Services";
+import About from "./pages/About";
 import GalleriesIndex from "./pages/galleries/GalleriesIndex";
 import HotTapGallery from "./pages/galleries/HotTapGallery";
 import QPDUPGallery from "./pages/galleries/QPDUPGallery";
@@ -30,11 +30,15 @@ const App = () => (
           <BackToTop />
           <Routes>
             <Route path="/" element={<Index />} />
+            <Route path="/about" element={<About />} />
             <Route path="/services" element={<Services />} />
             <Route path="/galleries" element={<GalleriesIndex />} />
             <Route path="/galleries/hot-tap" element={<HotTapGallery />} />
             <Route path="/galleries/qpdup" element={<QPDUPGallery />} />
-            <Route path="/galleries/miscellaneous" element={<MiscellaneousGallery />} />
+            <Route
+              path="/galleries/miscellaneous"
+              element={<MiscellaneousGallery />}
+            />
             <Route path="/qhse" element={<QHSE />} />
             <Route path="/nigerian-content" element={<NigerianContent />} />
             <Route path="/careers" element={<Careers />} />
